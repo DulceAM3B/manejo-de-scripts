@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Liberaciones Continuas</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Panel de Liberaciones Continuas</h1>
+    <p class="subtitle">Actividad de manejo de scripts — versión publicada automáticamente</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Estado del pipeline</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Etapa</th>
+            <th>Script</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Preparación del entorno</td>
+            <td><code>scripts/preparar.sh</code></td>
+            <td class="ok">Listo</td>
+          </tr>
+          <tr>
+            <td>Pruebas en liberación</td>
+            <td><code>scripts/probar.sh</code></td>
+            <td class="ok">Listo</td>
+          </tr>
+          <tr>
+            <td>Despliegue</td>
+            <td><code>scripts/desplegar.sh</code></td>
+            <td class="ok">Listo</td>
+          </tr>
+          <tr>
+            <td>Flujo de trabajo</td>
+            <td><code>.github/workflows/release.yml</code></td>
+            <td class="ok">Listo</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Últimas liberaciones de ejemplo</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Versión</th>
+            <th>Entorno</th>
+            <th>Fecha</th>
+            <th>Resultado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>v1.0.0</td>
+            <td>Producción</td>
+            <td>2026-11-20</td>
+            <td class="ok">Exitoso</td>
+          </tr>
+          <tr>
+            <td>v1.0.1</td>
+            <td>Release</td>
+            <td>2026-11-21</td>
+            <td class="ok">Exitoso</td>
+          </tr>
+          <tr>
+            <td>v1.1.0-rc</td>
+            <td>Release</td>
+            <td>2026-11-22</td>
+            <td class="ok">Exitoso</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Repositorio de actividad escolar — Liberación y despliegue continuo</p>
+  </footer>
+</body>
+</html>
